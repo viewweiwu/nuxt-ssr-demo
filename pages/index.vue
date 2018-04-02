@@ -100,18 +100,21 @@
       </button>
       <nuxt />
     </div>
+    <Side></Side>
   </div>
 </template>
 
 <script>
 import AppLogo from '~/components/AppLogo'
 import VHeader from '~/components/home/header'
+import Side from '~/components/home/side'
 import { mapState } from 'vuex'
 
 export default {
   components: {
     AppLogo,
-    VHeader
+    VHeader,
+    Side
   },
   data () {
     return {

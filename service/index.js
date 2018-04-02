@@ -4,7 +4,7 @@ import qs from 'qs'
 import config from './config'
 
 if (process.server) {
-  config.baseURL = `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 8085}`
+  config.baseURL = `http://${process.env.HOST || 'localhost'}:${process.env.PORT || 3000}`
 }
 
 const service = axios.create(config)
